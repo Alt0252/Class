@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 var fs = require('fs');
 var outfile = "primes.txt";
+var ulimit = 100;
 
 var num_primes = 0
-for (var i = 1; num_primes <=5; i++) {
+for (var i = 1; num_primes <=ulimit; i++) {
     if (checkPrime (i)) {
-//	fs.writeFileSync(outfile, i + ",");
-	fs.appendFileSync(outfile, i + ",");
-	console.log ("Wrote: " + i + " as prime.\n");
+	fs.appendFileSync(outfile, i);
+	if (i != ulimit) {fs.appendFileSync(outfile, ",");}
+	console.log ("Wrote: " + i + " as prime.");
 	num_primes++;
     }
 }
