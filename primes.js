@@ -11,7 +11,7 @@ for (var i = 1; num_primes <=5; i++) {
     }
 }
  
-console.log("Script: " + __filename + "\nWrote: " + out + "To: " + outfile);
+// console.log("Script: " + __filename + "\nWrote: " + out + "To: " + outfile);
 
 function checkPrime (num) {
     if (num < 2) return false; 
