@@ -15,7 +15,7 @@ console.log("Script: " + __filename + "\nWrote: " + out + "To: " + outfile);
 function checkPrime (num) {
     if (num < 2) return false; 
 
-    var last = (int) Math.sqrt (num); //the square root of num determines the test set  
+    var last = parseInt(Math.sqrt(num)); //the square root of num determines the test set  
 
     //check if evenly divisible up to the square root.
     for (var i = 2; i <= last; i++) {
