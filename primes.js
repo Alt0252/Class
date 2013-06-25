@@ -7,6 +7,7 @@ for (var i = 1; num_primes <=5; i++) {
     if (checkPrime (i)) {
 	fs.writeFileSync(outfile, i + ",");
 	console.log ("Wrote: " + i + " as prime.\n");
+	num_primes++;
     }
 }
  
