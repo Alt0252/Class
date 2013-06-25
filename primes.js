@@ -7,9 +7,9 @@ var num_primes = 0
 for (var i = 1; num_primes <=ulimit; i++) {
     if (checkPrime (i)) {
 	fs.appendFileSync(outfile, i);
-	if (i != ulimit) {fs.appendFileSync(outfile, ",");}
 	console.log ("Wrote: " + i + " as prime.");
 	num_primes++;
+	if (num_primes != ulimit) {fs.appendFileSync(out file, ",");}
     }
 }
  
