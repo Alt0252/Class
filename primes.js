@@ -3,7 +3,8 @@ var fs = require('fs');
 var outfile = "primes.txt";
 var ulimit = 100;
 
-var num_primes = 0
+var num_primes = 1
+
 for (var i = 1; num_primes <=ulimit; i++) {
     if (checkPrime (i)) {
 	fs.appendFileSync(outfile, i);
